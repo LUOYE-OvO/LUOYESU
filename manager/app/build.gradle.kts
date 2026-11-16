@@ -28,7 +28,7 @@ val bundledKernelVersionCode = rootProject.extra["bundledKernelVersionCode"] as 
 
 val isPrBuild = project.findProperty("IS_PR_BUILD")?.toString()?.toBoolean() ?: false
 val defaultManagerPackageName = if (isPrBuild) "io.milksu.manager.pr" else "io.milksu.manager"
-val defaultManagerName = if (isPrBuild) "MilkSU PR" else "MilkSU"
+val defaultManagerName = if (isPrBuild) "LUOYESU PR" else "LUOYESU"
 val managerPackageName = project.findProperty("KSU_PACKAGE_NAME")?.toString() ?: defaultManagerPackageName
 require(!Regex("^(me\\.weishu\\.kernelsu|com\\.rifsxd\\.ksunext)(\\..*)?$").matches(managerPackageName)) {
     "MilkSU must use its own application ID; upstream Manager identities are reserved."
